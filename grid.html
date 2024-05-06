@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/a656394404.js" crossorigin="anonymous"></script>
+    <style>
+        body{
+            background-color: rgba(128, 128, 128, 0.603);
+            box-sizing: border-box;
+        }
+        div.fl{
+            display: grid;
+            margin: 0px;
+            padding: 0px;
+            grid-template-columns: 20% 60% 20%;
+            gap: 10px 0;
+
+        }
+        .he{
+            grid-column: 1/4;
+            grid-row: 1/2;
+            text-align: center;
+            background-color: rgba(1, 70, 16, 0.884);
+            color: white;
+        }
+        .na{
+            display: inline;
+            word-spacing: 20px;
+            height: auto;
+            padding: 20px;
+            grid-column: 1/4;
+            grid-row: 2/3;
+            background-color: aquamarine;
+        }
+        .na a{
+            text-decoration: none;
+            color: black;
+        }
+        .na a:hover{
+            color: blue;
+            border-bottom: 3px solid blue;
+        }
+    
+        .ce{
+            display: grid;
+            grid-template-columns: 60% 40%;
+            height: auto;
+            width: auto;
+            padding: 20px;
+            grid-column: 1/3;
+            grid-row: 3/4;
+            background-color: darkslategray;
+            color: white;
+            text-align: justify;
+           
+        }
+        .ce2{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            height: auto;
+            width: auto;
+            padding: 20px;
+            grid-column: 1/3;
+            grid-row: 4/6;
+            background-color: rgb(53, 47, 79);
+            color: white;
+            text-align: justify;
+        }
+        .ce3{
+            display: grid;
+            grid-template-columns: 50% 49%;
+            height: auto;
+            width: auto;
+            gap: 10px;
+            grid-column: 1/4;
+            grid-row: 6/7;
+            color: white;
+            text-align: justify;
+        }
+        .ce4{
+            display: grid;
+            grid-template-columns: 75% 25%;
+            height: auto;
+            width: auto;
+            padding: 20px;
+            grid-column: 1/4;
+            grid-row: 7/8;
+            background-color: rgb(79, 47, 68);
+            color: white;
+            text-align: justify;
+        }
+        div img{
+            margin: 20px;
+          max-width: 400px;
+          border-radius: 5px;
+         
+        }
+        .ri{
+            grid-column: 3/4;
+            grid-row: 3/5;
+            text-align: center;
+            margin: 0;
+            height: 100%;
+        }
+        .fo{
+            grid-column: 1/4;
+            grid-row: 9/10;
+            display: grid;
+            grid-template-columns: 33.33% 33.33% 33.33%;
+            text-align: center;
+        }
+        
+        button{
+            padding: 8px;
+            border: 2px solid transparent;
+            border-radius: 5px;
+        }
+        button:hover{
+            position: absolute;
+            background-color: rgb(44, 79, 121);
+            color: white;
+        }
+        ol{
+            list-style-type: none;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h4{
+            text-align:center;
+        }
+      
+       @media screen and ( max-width: 900px) {
+        .ce,.ce2,.ce4{
+            grid-template-columns: 100%;
+        }
+        .ce2 img{
+          display: none;
+       }
+       .ri{
+           display: none;
+        }
+        .ce,.ce2,.na,.ce3,.ce4{
+            grid-column:1/4 ;
+        }
+       }
+       
+    </style>
+</head>
+<body>
+    <div class="fl">
+    <div class="he">
+<h1>ANDROID</h1>    </div>
+    <div class="na">
+        <a href="" style="color: blue; border-bottom:3px solid blue;">Overview</a>
+        <a href="">Release</a>
+        <a href="">Technology</a>
+        <a href="">MachineLearning</a>
+    </div>
+  
+    <div class="ce">
+        <div ><h1>ANDROID Platform</h1>
+            <p>Explore the Android development landscape. Learn about the latest release and review details of earlier releases. Discover the device ecosystem, modern Android development, and training courses.Explore the Android development landscape. Learn about the latest release and review details of earlier releases. Discover the device ecosystem, modern Android development, and training courses.</p>
+        </div>
+        <div > 
+            <img src="https://developer.android.com/static/courses/images/android-for-developers.svg" alt="">
+        </div>
+    </div> 
+    <div class="ce2">
+        <div>
+            <img style="max-width: 300px;" src="https://developer.android.com/static/about/versions/14/images/android-14-fullcolor.svg" alt="">
+        </div>
+        <div>
+            <h6>LATEST VERISION</h6>
+            <H1>Android 14 Beta</H1>
+            <p>Get an early look at Android 14, the latest version, available now for testing, development, and feedback. Beta 3 has the latest features and changes to try with your apps. This release is also available to users.Get an early look at Android 14, the latest version, available now for testing, development, and feedback. Beta 3 has the latest features and changes to try with your apps. This release is also available to users.</p>
+            <button>See All Release</button>
+        </div>
+    
+    </div>
+       <div class="ce3">
+        <div style="background-color: rgb(39, 136, 139); padding: 20px;">
+            <h6>EXTEND</h6>
+            <H1>Large Screen Device</H1>
+            
+            <p>Learn to use responsive layout that adapt to fitphones, tablets,foldables and ChromeOS devices.</p>
+            <button >Learn More</button>
+        </div>
+        <div style="background-color: rgb(94, 10, 129); padding: 20px;">
+            <h6>ENHANCE</h6>
+            <H1>Machine Learning</H1>
+            <p>Add on-device machine learning features to your app to enablr the latest processing capabities for image,audio and video.</p>
+            <button>Explore ML</button>
+        </div>
+    </div>
+    <div class="ce4">
+        <div>
+        <h6>TRAINING</h6>
+        <H1>Learn to develop Android apps</H1>
+        <p>Get startup , code Hello World and go deeper with training cources that take you from beginner to advance topics.Get startup , code Hello World and go deeper with training cources that take you from beginner to advance topics.</p>
+    <button>Get started</button>    
+    </div>
+    <div>
+        <img style="margin: 20px;" src="https://developer.android.com/static/images/ml/android-ml-hero.svg" alt="">    </div>
+    </div>
+      
+<div class="ri"><h3 style=" object-fit: fill; color: rgb(255, 0, 0); text-align: center;">ADVERTISEMENT</h3><a style="text-align: center;" href="https://www.google.com/search?q=asuran+movie&rlz=1C1GCEJ_enIN1030IN1031&oq=asuran+mo&gs_lcrp=EgZjaHJvbWUqDQgAEAAY4wIYsQMYgAQyDQgAEAAY4wIYsQMYgAQyCggBEC4YsQMYgAQyBwgCEAAYgAQyBggDEEUYOTIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBDjgyMjc2MTI0NmowajE1qAIAsAIA&sourceid=chrome&ie=UTF-8"><img width="100%" height="auto" src="https://e0.pxfuel.com/wallpapers/582/247/desktop-wallpaper-danush-tamil-movie-asuran.jpg" alt=""></a></div>
+    <div class="fo">
+        
+            <a href=""><img width="50px" src="https://developer.android.com/_static/android/images/logo-twitter.svg" alt=""></a>
+            <a href=""><img width="50px" src="https://www.gstatic.com/images/icons/material/product/2x/youtube_48dp.png" alt=""></a>
+            <a href=""><img width="50px" src="https://developer.android.com/_static/android/images/logo-linkedin.svg" alt=""></a>
+            <h4>DISCOVER</h4>
+            <h4>ANDROID DEVICE</h4>
+            <h4>RELEASE</h4>
+            <ol>
+                <li>Privacy</li>
+            <li>Gaming</li>
+            <li>MachineLearning</li>
+            </ol>
+            <ol>
+                <li>ChromeOS</li>
+                <li>Large screens</li>
+                <li>ChromeOS Device</li>
+            </ol>
+            <ol>
+                <li>Android 13</li>
+                <li>Android 12</li>
+                <li>Android 11</li>
+                
+            </ol>
+
+    </div>
+</div>
+</body>
+</html>
